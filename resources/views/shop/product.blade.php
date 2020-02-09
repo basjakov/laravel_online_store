@@ -14,8 +14,11 @@
             </div>
           
          @endforeach 
+       
+        
         
         </div>
+        <?php echo $products->links(); ?>
         <script type="text/javascript">
                         function AddToCart(id,name,price,first_image,weight){
                                 let data = {

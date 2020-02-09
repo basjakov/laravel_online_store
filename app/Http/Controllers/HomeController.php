@@ -46,7 +46,7 @@ class HomeController extends Controller
 
     #show page 
     public function site(){
-        $products = Product::get()->all();
+        $products = Product::paginate(10);
         return view('shop.product',compact('products'));
     }
 }
